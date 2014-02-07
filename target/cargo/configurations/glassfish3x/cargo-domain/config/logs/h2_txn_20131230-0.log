@@ -1,0 +1,5 @@
+txn[1003], 12:06:57.590, insert into Member (id, login, email, mot_passe) values (?,?,?,?) 
+txn[1003], 12:06:57.593, Binding Insert [Member]  set[id=1, login=ram, email=null, motPasse=123, ] 
+txn[1003], 12:06:57.597, Inserted [Member] [1] 
+txn[1004], 12:06:57.709, select count(*)  from Member t0  where t0.login = ?  and t0.mot_passe = ?  
+txn[1004], 12:06:57.721, FindRowCount exeMicros[11118] rows[0] type[ktwtr.models.Member] predicates[t0.login = ?  and t0.mot_passe = ? ] bind[said, 123] 

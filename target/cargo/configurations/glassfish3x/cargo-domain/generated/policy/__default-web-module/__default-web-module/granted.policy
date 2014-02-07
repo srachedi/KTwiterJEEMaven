@@ -1,0 +1,8 @@
+/* AUTOMATICALLY GENERATED ON Mon Dec 30 12:06:25 CET 2013*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebUserDataPermission "/";
+  permission javax.security.jacc.WebResourcePermission "/";
+};
+

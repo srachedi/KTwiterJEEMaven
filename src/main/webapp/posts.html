@@ -1,0 +1,54 @@
+<link rel="stylesheet" media="screen" href="css/post.css">
+<div class="row post">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-md-1">
+                    <img src="img/avatar.png" class="img-circle img-responsive" alt=""/>
+                </div>
+                <div>
+                    By :
+                    <a href="#" class="autor-login">
+                        <b>value.getAutor.getLogin</b>
+                    </a>
+                    <p> value.getContent</p>
+                </div>
+            </div>
+            <div class="row action">
+                <button type="button" class="btn btn-primary btn-xs col-md-offset-1 btn-comment" title="Comment">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </button>
+                <button type="button" class="btn btn-primary btn-xs">
+                    <span class="glyphicon">value.getComments.size</span>
+                </button>						
+                | 
+                <button type="button" class="btn btn-primary btn-xs pst-like" title="Like">
+                    <span class="glyphicon glyphicon-thumbs-down"></span>
+                </button>
+                |
+                <button type="button" class="btn btn-primary btn-xs">
+                    <span class="glyphicon">value.getLikes.size Likes</span>
+                </button>						
+                | 
+                <button type="button" class="btn btn-danger btn-xs pst-delete" title="Delete">
+                    <span class="glyphicon glyphicon-trash"></span>
+                </button>
+
+                <span class="mic-info pull-right btn-xs">
+                    In: <a href="#">Montpellier</a> on  at : 
+                </span>
+            </div>
+            <div class="row hidden">
+                <form class="frm-comment">
+                    <input type="hidden" id="post-id" value="@post.getId">
+                    <input type="text" id="comment-cnt" class="col-md-offset-1 col-md-11" placeholder="Write a comment...">
+                    <input type="submit" class="hidden"/>
+                </form>
+            </div>
+        </div>
+        <div class="panel-body">
+            <ul class="list-group row comments">
+            </ul>
+        </div>
+    </div>
+</div>

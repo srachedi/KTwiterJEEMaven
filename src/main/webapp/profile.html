@@ -1,0 +1,98 @@
+<br>
+<div class="panel panel-primary container col-md-12">
+    <div class="row panel-heading well well-lg ">
+        <div>
+            <h3>Detail profile</h3>
+        </div>
+    </div>
+    <div class="row panel-body">
+        <div>
+            <img src="img/avatar.png" class="img-circle"/>
+        </div>
+        <div class="col-md-offset-2">
+            <strong id="id-login"></strong><br>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Role:</td>
+                        <td id="id-role"></td>
+                    </tr>
+                    <tr>
+                        <td>Nom:</td>
+                        <td id="id-nom"></td>
+                    </tr>
+                    <tr>
+                        <td>Prenom :</td>
+                        <td id="id-prenom"></td>
+                    </tr>
+                    <tr>
+                        <td>Date de naissance:</td>
+                        <td id="id-date-naissance"></td>
+                    </tr>
+                    <tr>
+                        <td>Sexe:</td>
+                        <td id="id-sexe"></td>
+                    </tr>	
+                    <tr>
+                        <td>Ville:</td>
+                        <td id="id-ville"></td>
+                    </tr>					
+
+                    <tr>
+                        <td>Registered since:</td>
+                        <td id="id-date-register"></td>
+                    </tr>
+                    <tr>
+                        <td>Email : </td>
+                        <td id="id-email"></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre de posts : </td>
+                        <td><span class="badge" id="id-nbr-posts"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre de commentaires : </td>
+                        <td><span class="badge" id="id-nbr-cmnts"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>  
+    </div>
+    <div class="row panel-footer">
+        
+        <button class="btn btn-sm btn-primary btn-message-modal" type="button" data-toggle="modal" data-target="#myModal" data-original-title="Send message to user">
+            <i class="glyphicon glyphicon-envelope"></i>
+        </button>
+        
+        <span class="pull-right">
+        
+            <button class="btn btn-sm btn-warning btn-edit-profile" type="button" data-toggle="tooltip" data-original-title="Edit this member">
+                <i class="glyphicon glyphicon-edit"></i>
+            </button>
+        
+        </span>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="form-group">
+                    <label for="msg-title">To : <span>@autor.getLogin</span></label>
+                    <input type="hidden" class="form-control" id="msg-destinataire" value="@autor.getLogin"/>
+                    <input type="text" class="form-control" id="msg-title" placeholder="Title... ">
+                </div>
+            </div>
+            <div class="modal-body">
+                <textarea id="msg-content" class="form-control" rows="5" placeholder="Your message..."></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary btn-send-message">Send</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="col-md-8 col-md-offset-2 well">
+        <legend><a href="#"><i class="glyphicon glyphicon-edit"></i></a> Edit your profile !</legend>
+        <form class="form" role="form">
+            <div class="row">
+                <div class="col-md-6">
+                    <input class="form-control" id="ipt_nom" placeholder="Last Name" type="text" required autofocus />
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" id="ipt_prenom" placeholder="First Name" type="text" required />
+                </div>
+            </div>
+            <input class="form-control" id="ipt_email" placeholder="Your Email" type="email"/>
+            <input class="form-control" id="ipt_email2" placeholder="Re-enter Email" type="email" />
+            <input class="form-control" id="ipt_password" placeholder="New Password" type="password" />
+            <label for=""> Birth Date</label>
+            <div class="row">
+                <div class="col-md-4">
+                    <select id="ipt_month" class="form-control">
+                        <option value="">Month</option>
+                        <option value="">-----</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select id="ipt_day" class="form-control">
+                        <option value="">Day</option>
+                        <option value="">---</option>
+                        <option value="@i">@i</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select id="ipt_year" class="form-control">
+                        <option value="">Year</option>
+                        <option value="">----</option>
+                        <option value="@i">@i</option>
+                    </select>
+                </div>
+            </div>
+            <label class="radio-inline">
+                <input type="radio" name="ipt_sex" id="rd_sex1" value="male"/> Male
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="ipt_sex" id="rd_sex2" value="female" /> Female
+            </label>
+            <br />
+            <br />
+            <button class="btn btn-lg btn-primary btn-block btn-update" type="submit">Update</button>
+        </form>
+    </div>
+</div>
